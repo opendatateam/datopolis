@@ -1,2 +1,24 @@
 en:
-    todo_list: Todo list
+    todo:
+        title: Todo List
+        step_1:
+            main: 1 Take a data tile
+            sub: no peeking!
+        step_2:
+            main: 2 Build tools
+            sub: lay data tiles and negotiate!
+        step_3:
+            main: A Place use markers
+            sub: over each data tile you use
+        step_4:
+            main: B Name your creation
+            sub: use your imagination!
+        step_5:
+            main: 3 Discard one tool card
+            sub: if you want to
+        step_6:
+            main: 4 Draw new tool cards
+            sub: so you have three in your hand
+        step_7:
+            main: 5 Draw an event card
+            sub: only in the full version
