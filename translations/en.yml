@@ -30,3 +30,7 @@ en:
             environment: "help the environment and the economy"
         description_3: "Only open data as part of a deal"
         condition: "You win if"
+        types:
+            business: "BUSINESS"
+            third_sector: "THIRD SECTOR"
+            public_sector: "PUBLIC SECTOR"

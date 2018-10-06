@@ -63,9 +63,9 @@ Squib::Deck.new(cards: 9, width: 825, height: 1125, layout: 'layout.yml') do
   # png file: "templates/pokercard-portrait.png"
 
   text str: roles['name'], layout: 'RoleName'
-  text range: type['business'], str: "BUSINESS", layout: 'RoleType'
-  text range: type['third-sector'], str: "THIRD SECTOR", layout: 'RoleType'
-  text range: type['public-sector'], str: "PUBLIC SECTOR", layout: 'RoleType'
+  text range: type['business'], str: I18n.t("role.types.business"), layout: 'RoleType'
+  text range: type['third-sector'], str: I18n.t("role.types.third_sector"), layout: 'RoleType'
+  text range: type['public-sector'], str: I18n.t("role.types.public_sector"), layout: 'RoleType'
 
   text range: 0, str: I18n.t("role.description_1"), layout: 'RoleDescriptionBusinessEconomic1'
   text range: 1, str: I18n.t("role.description_1"), layout: 'RoleDescriptionBusinessSocial1'
