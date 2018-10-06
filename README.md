@@ -23,6 +23,12 @@ $ bundle exec rake
 
 Look in the `_output` folder for the generated cards.
 
+You can also generate cards for another supported language. By example for French:
+
+```
+$ bundle exec rake deck[fr]
+```
+
 ## How to create the hexagon tiles
 
 The graphics for the hexagon tiles are in [components/DataTiles](https://github.com/opendataboardgame/game/tree/master/components/DataTiles). These are generated to be printed by Gamecrafter as [small hex tiles on Gamecrafter](https://www.thegamecrafter.com/publish/product/SmallHexTile). You should be able to use the templates linked from those pages (eg the [proofing overlay](https://www.thegamecrafter.com/overlays/smallhextile.png)) to cut out a template to size the tiles, which you then use to cut out the tiles themselves.
