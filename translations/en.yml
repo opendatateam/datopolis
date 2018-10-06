@@ -22,3 +22,11 @@ en:
         step_7:
             main: 5 Draw an event card
             sub: only in the full version
+    role:
+        description_1: You can only build tools that
+        description_2:
+            economic: help the economy and people
+            social: "help people and the environment"
+            environment: "help the environment and the economy"
+        description_3: "Only open data as part of a deal"
+        condition: "You win if"

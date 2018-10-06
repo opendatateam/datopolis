@@ -67,23 +67,23 @@ Squib::Deck.new(cards: 9, width: 825, height: 1125, layout: 'layout.yml') do
   text range: type['third-sector'], str: "THIRD SECTOR", layout: 'RoleType'
   text range: type['public-sector'], str: "PUBLIC SECTOR", layout: 'RoleType'
 
-  text range: 0, str: "You can only build tools that", layout: 'RoleDescriptionBusinessEconomic1'
-  text range: 1, str: "You can only build tools that", layout: 'RoleDescriptionBusinessSocial1'
-  text range: 2, str: "You can only build tools that", layout: 'RoleDescriptionBusinessEnvironmental1'
+  text range: 0, str: I18n.t("role.description_1"), layout: 'RoleDescriptionBusinessEconomic1'
+  text range: 1, str: I18n.t("role.description_1"), layout: 'RoleDescriptionBusinessSocial1'
+  text range: 2, str: I18n.t("role.description_1"), layout: 'RoleDescriptionBusinessEnvironmental1'
 
-  text range: 0, str: "help the economy and people", layout: 'RoleDescriptionBusinessEconomic2'
-  text range: 1, str: "help people and the environment", layout: 'RoleDescriptionBusinessSocial2'
-  text range: 2, str: "help the environment and the economy", layout: 'RoleDescriptionBusinessEnvironmental2'
+  text range: 0, str: I18n.t("role.description_2.economic"), layout: 'RoleDescriptionBusinessEconomic2'
+  text range: 1, str: I18n.t("role.description_2.social"), layout: 'RoleDescriptionBusinessSocial2'
+  text range: 2, str: I18n.t("role.description_2.environment"), layout: 'RoleDescriptionBusinessEnvironmental2'
 
-  text range: 0, str: "Only open data as part of a deal", layout: 'RoleDescriptionBusinessEconomic3'
-  text range: 1, str: "Only open data as part of a deal", layout: 'RoleDescriptionBusinessSocial3'
-  text range: 2, str: "Only open data as part of a deal", layout: 'RoleDescriptionBusinessEnvironmental3'
+  text range: 0, str: I18n.t("role.description_3"), layout: 'RoleDescriptionBusinessEconomic3'
+  text range: 1, str: I18n.t("role.description_3"), layout: 'RoleDescriptionBusinessSocial3'
+  text range: 2, str: I18n.t("role.description_3"), layout: 'RoleDescriptionBusinessEnvironmental3'
 
   text range: [3,6], str: roles['role'], layout: 'RoleDescriptionEconomic'
   text range: [4,7], str: roles['role'], layout: 'RoleDescriptionSocial'
   text range: [5,8], str: roles['role'], layout: 'RoleDescriptionEnvironmental'
 
-  text str: "You win if", layout: 'RoleConditionTitle'
+  text str: I18n.t("role.condition"), layout: 'RoleConditionTitle'
   text str: roles['condition'], layout: 'RoleCondition'
 
   save_png prefix: 'role_'
