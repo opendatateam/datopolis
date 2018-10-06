@@ -1,4 +1,8 @@
 require 'squib'
+require 'I18n'
+
+I18n.config.available_locales = :en
+I18n.load_path += Dir['translations/*.yml']
 
 # sheets are created based on printing on A4 paper
 # A4 paper = 8.3" x 11.7"
@@ -12,8 +16,8 @@ Squib::Deck.new(cards: 1, width: 825, height: 1125, layout: 'layout.yml') do
 
   png file: "components/Card_Backgrounds/Mission_Back_BG.png", layout: 'Background'
   # png file: "templates/pokercard-portrait.png"
-  
-  text str: "Todo list", layout: 'TodoTitle'
+
+  text str: I18n.t(:todo_list), layout: 'TodoTitle'
   svg file: "components/ToolCards_Icons/Todo_Checkbox.svg", layout: 'TodoCheck1'
   text str: "1 Take a data tile", layout: 'Todo1'
   text str: "no peeking!", layout: 'TodoSub1'
@@ -51,13 +55,13 @@ Squib::Deck.new(cards: 9, width: 825, height: 1125, layout: 'layout.yml') do
   png range: focus['Economic'], file: "components/Card_Backgrounds/Mission_Economy_Front_BG.png", layout: 'Background'
   png range: focus['Social'], file: "components/Card_Backgrounds/Mission_Social_Front_BG.png", layout: 'Background'
   png range: focus['Environmental'], file: "components/Card_Backgrounds/Mission_Environment_Front_BG.png", layout: 'Background'
-  
+
   svg range: focus['Economic'], file: "components/ToolCards_Icons/Economic_Icon_Active.svg", layout: 'RoleFocusIcon'
   svg range: focus['Social'], file: "components/ToolCards_Icons/Social_Icon_Active.svg", layout: 'RoleFocusIcon'
   svg range: focus['Environmental'], file: "components/ToolCards_Icons/Environmental_Icon_Active.svg", layout: 'RoleFocusIcon'
 
   # png file: "templates/pokercard-portrait.png"
-  
+
   text str: roles['name'], layout: 'RoleName'
   text range: type['business'], str: "BUSINESS", layout: 'RoleType'
   text range: type['third-sector'], str: "THIRD SECTOR", layout: 'RoleType'
