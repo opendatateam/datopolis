@@ -1,0 +1,36 @@
+fr:
+    todo:
+        title: Todo List
+        step_1:
+            main: 1 Prenez une tuile de données
+            sub: pas de triche !
+        step_2:
+            main: 2 Construisez des outils
+            sub: posez des tuiles de données et négociez !
+        step_3:
+            main: A Placez les jetons d'utilisation
+            sub: sur chaque tuile de données que vous utilisez
+        step_4:
+            main: B Nommez votre création
+            sub: utilisez votre imagination !
+        step_5:
+            main: 3 Défaussez-vous d'une carte outil
+            sub: si vous le souhaitez
+        step_6:
+            main: 4 Piochez une nouvelle carte outil
+            sub: de façon à en avoir trois en main
+        step_7:
+            main: 5 Piochez une carte événement
+            sub: seulement dans la version complète
+    role:
+        description_1: Vous pouvez uniquement construire des outils qui
+        description_2:
+            economic: aident l'économie et les gens
+            social: aident les gens et l'environnement
+            environment: aident l'environnement et l'économie
+        description_3: Seule l'open data fait partie du deal
+        condition: Vous gagnez si
+        types:
+            business: BUSINESS
+            third_sector: SECTEUR TERTIAIRE
+            public_sector: SECTEUR PUBLIC
